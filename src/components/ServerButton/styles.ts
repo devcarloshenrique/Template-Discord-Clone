@@ -21,8 +21,18 @@ export const Button = styled.button<Props>`
   cursor: pointer;
 
   > img {
-    width: 24px;
-    height: 24px;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    overflow: hidden;
+    position: relative;
+
+    transition: border-radius .2s, background .2s;
+
+    &.active,
+    &:hover {
+      border-radius: 16px;
+    }
   }
 
   &::before {
