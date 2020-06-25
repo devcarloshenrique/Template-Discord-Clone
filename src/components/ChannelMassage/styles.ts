@@ -28,8 +28,19 @@ export const Avatar = styled.div`
   background-color: var(--secondary);
   border-radius: 50%;
 
-  &.bot {
-    background-color: var(--mention-detail);
+  > img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    overflow: hidden;
+    position: relative;
+
+    transition: border-radius .2s, background .2s;
+
+    &.active,
+    &:hover {
+      border-radius: 16px;
+    }
   }
 `;
 

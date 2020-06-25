@@ -77,15 +77,24 @@ export const User = styled.div`
 `;
 
 export const Avatar = styled.div`
-  flex-shrink: 0;
+  width: 40px;
+  height: 40px;
 
-  width: 32px;
-  height: 32px;
-
+  background-color: var(--secondary);
   border-radius: 50%;
-  background-color: var(--primary);
 
-  &.bot {
-    background-color: var(--mention-detail);
+  > img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    overflow: hidden;
+    position: relative;
+
+    transition: border-radius .2s, background .2s;
+
+    &.active,
+    &:hover {
+      border-radius: 16px;
+    }
   }
 `;

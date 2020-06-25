@@ -21,10 +21,24 @@ export const Profile = styled.div`
 export const Avatar = styled.div`
   width: 32px;
   height: 32px;
+
+  background-color: var(--secondary);
   border-radius: 50%;
 
-  background-color: var(--gray);
-`;
+  > img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    overflow: hidden;
+    position: relative;
+
+    transition: border-radius .2s, background .2s;
+
+    &.active,
+    &:hover {
+      border-radius: 16px;
+    }
+  }`;
 
 export const UserData = styled.div`
   margin-left: 8px;
