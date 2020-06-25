@@ -7,9 +7,11 @@ const UserInfo: React.FC = () => {
         <Container>
             
             <Profile>
-                <Avatar />
+                <Avatar>
+                    <img src={'https://picsum.photos/id/3/350/350'} alt="User" />
+                </Avatar>
                 <UserData>
-                    <strong>Carlos Henrique</strong>
+                    <strong>Dev Carlos</strong>
                     <span> #3377 </span>
                 </ UserData>
             </ Profile>
