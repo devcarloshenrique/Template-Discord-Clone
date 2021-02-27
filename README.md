@@ -1,4 +1,4 @@
-## Modelo 4 - Discorde Clone
+## Template Discorde Clone
 
 No diretório do projeto, você pode executar:
 
